@@ -3,10 +3,6 @@ Selenium Ruby | Rspec via Page Objects
 
 **To run Selenium tests, Follow the cmd in Terminal**:
 
-```
-rspec --format html --out report.html WordPress.rb
-```
-
  ```
  rspec --format html --out report.html WordPress.rb
  ```
