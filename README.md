@@ -32,3 +32,9 @@ gem install fuubar
  ```
  rspec --format Fuubar --color Emp_timesheets.rb
  ```
+
+**To run as test suite, Follow the cmd in Terminal**
+
+ ```
+ rspec spec/ -t suite
+ ```
