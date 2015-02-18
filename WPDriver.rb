@@ -24,8 +24,11 @@ class WPDriver
     @driver.find_element(:link, "Log In").click
     @driver.find_element(:id, "user_login").clear
     @driver.find_element(:id, "user_login").send_keys "prashanthsams"
+    puts 'inserted username'
     @driver.find_element(:id, "user_pass").send_keys "nitrous_hacker1"
+    puts 'inserted password'
     @driver.find_element(:id, "wp-submit").click
+    puts 'clicked submit button'
     return Commented.new(@driver)
   end
 
