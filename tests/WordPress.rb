@@ -11,7 +11,7 @@ end
 describe 'WordPress - Reader' do
 
   before(:all) do
-    ENV['HTTP_PROXY'] = ENV['http_proxy'] = nil
+    # ENV['HTTP_PROXY'] = ENV['http_proxy'] = nil
     @app = WPDriver.new(Selenium::WebDriver.for(:chrome))
     # @app = WPDriver.new(Selenium::WebDriver.for(:firefox))
     # @app = WPDriver.new(Selenium::WebDriver.for(:phantomjs))
