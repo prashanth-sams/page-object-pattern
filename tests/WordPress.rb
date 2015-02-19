@@ -12,9 +12,9 @@ describe 'WordPress - Reader' do
 
   before(:all) do
     ENV['HTTP_PROXY'] = ENV['http_proxy'] = nil
-    # @app = WPDriver.new(Selenium::WebDriver.for(:chrome))
+    @app = WPDriver.new(Selenium::WebDriver.for(:chrome))
     # @app = WPDriver.new(Selenium::WebDriver.for(:firefox))
-    @app = WPDriver.new(Selenium::WebDriver.for(:phantomjs))
+    # @app = WPDriver.new(Selenium::WebDriver.for(:phantomjs))
     @app.script_timeout
     @app.implicit_wait
     @app.page_load
