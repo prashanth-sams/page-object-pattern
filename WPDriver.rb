@@ -30,6 +30,7 @@ class WPDriver
     @driver.find_element(:name, "wp-submit").click
     puts 'clicked submit button'
     sleep 5
+    puts @driver.title
     return Commented.new(@driver)
   end
 
