@@ -29,6 +29,7 @@ class WPDriver
     puts 'inserted password'
     @driver.find_element(:id, "wp-submit").click
     puts 'clicked submit button'
+    sleep 5
     return Commented.new(@driver)
   end
 
