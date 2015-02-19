@@ -27,7 +27,7 @@ class WPDriver
     puts 'inserted username'
     @driver.find_element(:id, "user_pass").send_keys "nitrous_hacker1"
     puts 'inserted password'
-    @driver.find_element(:name, "wp-submit").click
+    @driver.find_element(:id, "wp-submit").click
     puts 'clicked submit button'
     sleep 5
     puts @driver.title
