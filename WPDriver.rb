@@ -22,15 +22,14 @@ class WPDriver
 
   def login
     @driver.find_element(:link, "Log In").click
-    @driver.find_element(:id, "user_login").clear()
+    @driver.find_element(:id, "user_login").clear
     @driver.find_element(:id, "user_login").send_keys "seleniumessentials"
     puts 'inserted username'
-    @driver.find_element(:id, "user_pass").clear()
     @driver.find_element(:id, "user_pass").send_keys "Sams@2015"
     puts 'inserted password'
     @driver.find_element(:id, "wp-submit").click
     puts 'clicked submit button'
-    sleep 5
+    sleep 20
     puts @driver.title
     return Commented.new(@driver)
   end
