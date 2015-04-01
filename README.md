@@ -39,4 +39,5 @@ gem install fuubar
 
  ```
  rspec spec/ -t suite
+ rspec spec_helper.rb
  ```
