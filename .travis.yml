@@ -6,4 +6,5 @@ rvm:
   - 2.1.1
   - jruby-19mode
 script:
+  - bundle install
   - rspec spec_helper.rb
