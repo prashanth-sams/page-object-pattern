@@ -12,9 +12,9 @@ class Gmail < GoogleDriver
 
   def login_gmail
     @driver.find_element(:id, "Email").clear
-    @driver.find_element(:id, "Email").send_keys "prashanth.sams@sysvine.com"
+    # @driver.find_element(:id, "Email").send_keys "xxxxx@xxxx.com"
     @driver.find_element(:id, "Passwd").clear
-    @driver.find_element(:id, "Passwd").send_keys "vine@2012"
+    # @driver.find_element(:id, "Passwd").send_keys "xxxx"
     @driver.find_element(:id, "signIn").click
     return GoogleDriver.new(@driver)
   end
