@@ -19,25 +19,7 @@ class GoogleDriver
     return GoogleDriver.new(@driver)
   end
 
-<<<<<<< HEAD:GoogleDriver.rb
   def navigate
-=======
-  def login
-    @driver.find_element(:link, "Log In").click
-    @driver.find_element(:id, "user_login").clear
-    @driver.find_element(:id, "user_login").send_keys "seleniumessentials"
-    puts 'inserted username'
-    @driver.find_element(:id, "user_pass").send_keys "Sams@2015"
-    puts 'inserted password'
-    @driver.find_element(:id, "wp-submit").click
-    puts 'clicked submit button'
-    sleep 20
-    puts @driver.title
-    return Commented.new(@driver)
-  end
-
-  def skip_login
->>>>>>> 7155439c7170a65e215d6d6f5709f94169c8d7e9:WPDriver.rb
     return NavBar.new(@driver)
   end
 
