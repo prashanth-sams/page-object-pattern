@@ -1,3 +1,7 @@
+[ ![Codeship Status for wearehanno/riggings](https://codeship.io/projects/2b1725b0-99b3-0132-9f48-764c5db7a55a/status?branch=master)](https://codeship.com/projects/63713) 
+[![Build Status](https://travis-ci.org/prashanth-sams/page-object-pattern.svg?branch=master)](https://travis-ci.org/prashanth-sams/page-object-pattern)
+[![Coverage Status](https://coveralls.io/repos/prashanth-sams/page-object-pattern/badge.svg)](https://coveralls.io/r/prashanth-sams/page-object-pattern)
+
 # page-object-pattern
 Selenium Ruby | Rspec via Page Objects
 
@@ -29,4 +33,10 @@ gem install fuubar
 
  ```
  rspec --format Fuubar --color Emp_timesheets.rb
+ ```
+
+**To run as test suite, Follow the cmd in Terminal**
+
+ ```
+ rspec spec/ -t suite
  ```
