@@ -1,34 +1,25 @@
-require_relative '../WPDriver'
-require_relative '../pages/Commented'
+require_relative '../GoogleDriver'
+require_relative '../pages/Gmail'
+require_relative '../pages/Images'
+require_relative '../pages/GoogleMe'
 
-class NavBar < WPDriver
+class NavBar < GoogleDriver
 
   def initialize (driver)
     super(driver)
   end
 
-  def navigateCommentIMadePage
-    @driver.find_element(:link, "Comments I Made").click
-    return Commented.new(@driver)
+  def NavigateToGoogle
+    return GoogleMe.new(@driver)
   end
 
-  def navigatePostsILikePage
-    @driver.find_element(:link, "Posts I Like").click
-    # return Liked.new(@driver)
+  def NavigateToImages
+    @driver.find_element(:link, "Images").click
+    return Images.new(@driver)
   end
 
-  def navigateFreshlyPressedPage
-    @driver.find_element(:link, "Freshly Pressed").click
-    # return FreshlyPressed.new(@driver)
-  end
-
-  def navigateRecommendedBlogsPage
-    @driver.find_element(:link, "Recommended Blogs").click
-    # return RecommendedBlogs.new(@driver)
-  end
-
-  def navigateFindFriendsPage
-    @driver.find_element(:link, "Find Friends").click
-    # return FindFriends.new(@driver)
+  def NavigateToGmail
+    @driver.find_element(:link, "Gmail").click
+    return Gmail.new(@driver)
   end
 end

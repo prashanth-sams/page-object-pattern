@@ -2,7 +2,7 @@ require 'rspec'
 require 'selenium-webdriver'
 include RSpec::Expectations
 
-class WPDriver
+class GoogleDriver
 
   @driver = nil
 
@@ -12,24 +12,14 @@ class WPDriver
   end
 
   def visit
-    @driver.navigate.to('https://wordpress.com/')
+    @driver.navigate.to('https://www.google.co.in/')
     @driver.manage.timeouts.page_load = 10
     @driver.manage.window.move_to(0, 0)
     @driver.manage.window.resize_to(1800, 1800)
-    puts "WP system successfully Loaded..."
-    return WPDriver.new(@driver)
+    return GoogleDriver.new(@driver)
   end
 
-  def login
-    @driver.find_element(:link, "Log In").click
-    @driver.find_element(:id, "user_login").clear
-    @driver.find_element(:id, "user_login").send_keys "xxxxxxxxxxx"
-    @driver.find_element(:id, "user_pass").send_keys "xxxxxxxxxxx"
-    @driver.find_element(:id, "wp-submit").click
-    return Commented.new(@driver)
-  end
-
-  def skip_login
+  def navigate
     return NavBar.new(@driver)
   end
 
