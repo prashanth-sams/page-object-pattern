@@ -24,6 +24,7 @@ RSpec.describe 'Search' do
         .navigate
           .NavigateToGoogle
       expect(Google_search.title).to be == 'Google'
+      puts "Hi! I'm a reader"
       Google_search.do_google_search
       # @app.element_present?(:xpath, "//h2[contains(text(),'Recommended Blogs')]")
   end
