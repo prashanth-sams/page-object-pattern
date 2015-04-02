@@ -6,4 +6,4 @@ require 'rake/testtask'
 # Rake::TestTask.new do |t|
 #   t.libs << 'test'
 #   t.pattern = 'spec_helper.rb'
-end
+# end
