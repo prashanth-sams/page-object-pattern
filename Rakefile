@@ -5,7 +5,7 @@ require 'rake/testtask'
 task :default => [:test]
 
 task :test do
-  rspec "spec_helper.rbr"
+  rspec "spec_helper.rb"
 end
 
 # task :default => :test
