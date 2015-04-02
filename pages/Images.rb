@@ -13,7 +13,7 @@ class Images < GoogleDriver
 
   def do_image_search
     @driver.find_element(:name, "q").clear
-    @driver.find_element(:namw, "q").send_keys "Sysvine Technologies"
+    @driver.find_element(:name, "q").send_keys "Sysvine Technologies"
     return GoogleDriver.new(@driver)
   end
 end
