@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'rake/testtask'
-
 # require File.expand_path("../tests/Google.rb", __FILE__)
 
 task :default => :test
