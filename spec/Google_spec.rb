@@ -1,6 +1,6 @@
 require_relative '../pages/NavBar'
 
-describe 'Search' do
+RSpec.describe 'Search' do
 
   before(:all) do
     ENV['HTTP_PROXY'] = ENV['http_proxy'] = nil
