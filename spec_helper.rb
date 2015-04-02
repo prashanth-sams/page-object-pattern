@@ -1,5 +1,5 @@
 # ENV['HTTP_PROXY'] = ENV['http_proxy'] = nil
-# require File.expand_path("../tests/Google.rb", __FILE__)
+require File.expand_path("../tests/Google.rb", __FILE__)
 
 RSpec.configure do |config|
 
