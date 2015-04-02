@@ -11,8 +11,8 @@ class GoogleMe < GoogleDriver
   end
 
   def do_google_search
-    @driver.find_element(:id, "lst-ib").clear
-    @driver.find_element(:id, "lst-ib").send_keys "Sysvine Technologies"
+    @driver.find_element(:name, "q").clear
+    @driver.find_element(:name, "q").send_keys "Sysvine Technologies"
     return GoogleDriver.new(@driver)
   end
 end
