@@ -7,7 +7,7 @@ Selenium Ruby | Rspec via Page Objects
 **To run Selenium tests, Follow the cmd in Terminal**:
 
  ```
- rspec --format html --out report.html WordPress.rb
+ rspec --format html --out report.html Google_spec.rb
  ```
 
 > RSpec JUnit Formatter
@@ -19,7 +19,7 @@ Install the gem:
  ```
 
  ```
- rspec --format RspecJunitFormatter  --out rspec.xml WordPress.rb
+ rspec --format RspecJunitFormatter  --out rspec.xml Google_spec.rb
  ```
 
 > Fuubar
@@ -31,7 +31,7 @@ gem install fuubar
  ```
 
  ```
- rspec --format Fuubar --color Emp_timesheets.rb
+ rspec --format Fuubar --color Google_spec.rb
  ```
 
 **To run as test suite, Follow the cmd in Terminal**
